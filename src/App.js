@@ -19,7 +19,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
-
+  useEffect(() => {
+    document.title = "My Portfolio | Ruthvik";
+  }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
